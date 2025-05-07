@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: unhwjm80t-python
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: unhwjm80t-python 
+  name: unhwjm80t-python
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: unhwjm80t-python 
